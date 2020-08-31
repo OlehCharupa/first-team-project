@@ -1,6 +1,5 @@
 .footer {
-  padding-top: 30px;
-  padding-bottom: 21px;
+  position: relative;
   text-align: center;
 }
 
@@ -10,9 +9,11 @@
   width: 84px;
   height: 30px;
 }
-.container .footer {
-  margin: 0 auto;
+.upper-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 .telephone {
   display: flex;
   align-items: center;
@@ -36,14 +37,21 @@
 }
 .copyright {
   color: $primary-text-color;
-  margin-top: 51px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.copyright::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: -1;
+  content: '';
+  background-color: $secondary-text-color;
 }
 
 @media screen and (min-width: 728px) and (max-width: 1353px) {
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 21px;
-  }
   .logo {
     width: 128px;
     height: 45px;
@@ -52,6 +60,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .contact-info {
     display: flex;
@@ -80,10 +90,6 @@
 }
 
 @media screen and (min-width: 1354px) {
-  .footer {
-    padding-top: 52px;
-    padding-bottom: 21px;
-  }
   .logo {
     width: 128px;
     height: 45px;
@@ -91,6 +97,8 @@
   .upper-section {
     display: flex;
     align-items: center;
+    padding-top: 52px;
+    padding-bottom: 53px;
   }
   .contact-info {
     display: flex;
