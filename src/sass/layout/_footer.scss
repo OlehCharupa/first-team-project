@@ -1,0 +1,139 @@
+.footer {
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 84px;
+  height: 30px;
+}
+.upper-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.telephone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $bg-color;
+}
+.icon-telephone {
+  fill: $accent;
+  margin-right: 10px;
+}
+
+.icon-instagram {
+  display: block;
+  margin: 0 auto;
+  max-width: 40px;
+}
+.copyright {
+  color: $primary-text-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.copyright::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: -1;
+  content: '';
+  background-color: $secondary-text-color;
+}
+
+@media screen and (min-width: 728px) and (max-width: 1353px) {
+  .logo {
+    width: 128px;
+    height: 45px;
+  }
+  .upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  .telephone {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .telephone::after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: $primary-text-color;
+  }
+  .icon-telephone {
+    width: 24px;
+    height: 23px;
+  }
+  .copyright {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .logo {
+    width: 128px;
+    height: 45px;
+  }
+  .upper-section {
+    display: flex;
+    align-items: center;
+    padding-top: 52px;
+    padding-bottom: 53px;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info {
+    margin-left: 290px;
+  }
+  .telephone {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+
+    letter-spacing: 0.08em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .telephone::after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    margin-left: 16px;
+    margin-right: 24px;
+    background-color: $primary-text-color;
+  }
+  .icon-telephone {
+    width: 30px;
+    height: 29px;
+    margin-right: 15px;
+  }
+  .copyright {
+    text-align: start;
+  }
+}
