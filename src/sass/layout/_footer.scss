@@ -1,13 +1,14 @@
 .footer {
-  position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 21px;
   text-align: center;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
+  width: 84px;
+  height: 30px;
 }
 .container .footer {
   margin: 0 auto;
@@ -16,12 +17,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
   margin-top: 20px;
   margin-bottom: 30px;
   color: $bg-color;
 }
 .icon-telephone {
   fill: $accent;
+  margin-right: 10px;
 }
 
 .icon-instagram {
@@ -29,9 +35,92 @@
   margin: 0 auto;
 }
 .copyright {
-  min-width: 320px;
-  padding-top: 21px;
-  padding-bottom: 21px;
   color: $primary-text-color;
-  background-color: $bg-color;
+  margin-top: 51px;
+}
+
+@media screen and (min-width: 728px) and (max-width: 1353px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 21px;
+  }
+  .logo {
+    width: 128px;
+    height: 45px;
+  }
+  .upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  .telephone {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .telephone::after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: $primary-text-color;
+  }
+  .icon-telephone {
+    width: 24px;
+    height: 23px;
+  }
+  .copyright {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .footer {
+    padding-top: 52px;
+    padding-bottom: 21px;
+  }
+  .logo {
+    width: 128px;
+    height: 45px;
+  }
+  .upper-section {
+    display: flex;
+    align-items: center;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info {
+    margin-left: 290px;
+  }
+  .telephone {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+
+    letter-spacing: 0.08em;
+  }
+  .telephone::after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    margin-left: 16px;
+    margin-right: 24px;
+    background-color: $primary-text-color;
+  }
+  .icon-telephone {
+    width: 30px;
+    height: 29px;
+    margin-right: 15px;
+  }
+  .copyright {
+    text-align: start;
+  }
 }
