@@ -21,7 +21,6 @@
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
     margin-bottom: 10px;
   }
   &-title {
@@ -29,14 +28,10 @@
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
+    text-transform: uppercase;
     letter-spacing: 0.03em;
     color: $white;
     margin-bottom: 50px;
-  }
-  &-list {
-    position: relative;
-    padding-left: 26px;
-    margin-left: 74px;
   }
 }
 .program-accent {
@@ -47,33 +42,6 @@
   line-height: 1.6;
   letter-spacing: 0.08em;
   margin-bottom: 5px;
-}
-
-.program-list::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 1px;
-  height: 92%;
-  background-color: $white;
-}
-.program-feature {
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    background-color: $accent;
-    top: 7px;
-    left: -32px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-  }
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
 }
 
 .program-descriprion-list > .program-descriprion-item:not(:last-child) {
@@ -88,11 +56,47 @@
       background-repeat: no-repeat;
       background-position-y: 76%;
       background-position-x: 100%;
+      .program-list::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 1px;
+        height: 92%;
+        background-color: $white;
+      }
+      &-list {
+        position: relative;
+        padding-left: 26px;
+        margin-left: 74px;
+      }
+    }
+    .program-feature {
+      position: relative;
+      .program-subtitle {
+        text-transform: uppercase;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: $accent;
+        top: 7px;
+        left: -32px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
     }
   }
 }
-
 @media screen and (min-width: 728px) and (max-width: 1353px) {
+  .container-program {
+    padding-bottom: 142px;
+  }
   .program {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -102,8 +106,41 @@
       line-height: 1.3;
       letter-spacing: 0.03em;
     }
+    &-list {
+      position: relative;
+      padding-left: 56px;
+      margin-left: 63px;
+    }
+    .program-list::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      width: 1px;
+      height: 88%;
+      background-color: $white;
+    }
+    .program-feature {
+      position: relative;
+      .program-subtitle {
+        text-transform: uppercase;
+      }
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background-color: $accent;
+        top: 7px;
+        left: -62px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+    }
   }
-
   .program-descriprion-list {
     display: flex;
   }
@@ -114,13 +151,17 @@
   .program-descriprion-list > .program-descriprion-item:not(:last-child) {
     margin-bottom: 0px;
   }
+  .program-descriprion-list .program-accent {
+    margin-bottom: 10px;
+  }
+  .program-descriprion-list .program-accent p:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1353px) {
   .program {
     position: relative;
-    padding-left: 183px;
-    padding-right: 183px;
     padding-top: 120px;
     padding-bottom: 60px;
     &::before {
@@ -133,6 +174,7 @@
     }
     &-title {
       position: relative;
+      text-transform: uppercase;
       text-align: start;
       font-size: 46px;
       margin-bottom: 100px;
@@ -140,16 +182,38 @@
   }
 
   .program-list {
-    margin-left: 0px;
+    margin-bottom: 60px;
     display: flex;
   }
-  .program-feature:not(:last-child) {
-    margin-right: 30px;
-  }
-  .program-descriprion-item {
+  .program-feature {
+    position: relative;
     width: 20%;
+    .program-subtitle {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 0.93;
+      letter-spacing: 0.08em;
+      margin-bottom: 25px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: $accent;
+      top: -56px;
+      left: 0px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+    .program-descriprion-item:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    .program-accent {
+      margin-bottom: 10px;
+    }
   }
-  .program-list::before {
-    display: none;
-  }
+  // .program-list::before {
+  //   display: none;
+  // }
 }

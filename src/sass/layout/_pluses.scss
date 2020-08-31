@@ -25,6 +25,12 @@
   margin-bottom: 10px;
 }
 @media screen and (min-width: 728px) and (max-width: 1353px) {
+  .pluses {
+    padding-top: 50px;
+  }
+  .container-pluses .title {
+    text-align: center;
+  }
   .container-pluses .pluses-list {
     display: flex;
     flex-wrap: wrap;
