@@ -37,9 +37,19 @@
     flex-wrap: wrap;
     padding-left: 98px;
     padding-top: 30px;
+    padding-right: 98px;
+    padding-bottom: 25px;
   }
   .pluses-item {
     width: calc((100% - 20px) / 2);
+    .number {
+      font-size: 14px;
+      line-height: 1.649;
+    }
+    .subtitle {
+      font-size: 14px;
+      line-height: 1.4;
+    }
   }
   .pluses-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
