@@ -1,0 +1,765 @@
+@media screen and (max-width:727px){
+
+  .section-slider{
+    .title{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 130%;
+      /* or 26px */
+      
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+  }
+
+  .main-slider{
+    box-shadow: -5px -70px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .slider {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 130px;
+    
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .slider__wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 682px;
+    
+  }
+
+  /* стили для контейнера слайдов */
+  .slider__items {
+    display: flex;
+    transition: transform 0.9s ease;
+  }
+
+  /* стили для слайдов */
+  .slider__item {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 20px 30px ;
+    flex: 0 0 100%;
+    max-width: 280px;
+    // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .slider__control {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+   
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+  }
+
+  .slider__control_show {
+    display: flex;
+    z-index: 30;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+  }
+
+  .slider__control_prev {
+    
+    left: -2px;
+  }
+
+  .slider__control_next {
+    right: -2px;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_prev::before {
+    background-image: url(./../images/slider/Arrow-left.svg);
+  }
+
+  .slider__control_next::before {
+    background-image: url(./../images/slider/Arrow-right.svg);
+  }
+
+  /* стили для индикаторов */
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: red;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    &:nth-child(1){
+      background-image: url(./../images/slider/1.jpg);
+    }
+    &:nth-child(2){
+      background-image: url(./../images/slider/2.jpg);
+    }
+    &:nth-child(3){
+      background-image: url(./../images/slider/3.jpg);
+    }
+    &:nth-child(4){
+      display: none;
+      background-image: url(./../images/slider/4.jpg);
+    }
+    &:nth-child(5){
+      display: none;
+      background-image: url(./../images/slider/5.jpg);
+    }
+    &:nth-child(6){
+      display: none;
+      background-image: url(./../images/slider/6.jpg);
+    }
+    &:nth-child(7){
+      display: none;
+      background-image: url(./../images/slider/7.jpg);
+    }
+    
+
+  }
+
+  .slider__indicators li.active {
+    border: 1px solid $accent;
+  }
+
+  /* для стилизации текущего слайдера */
+  .img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .left-side{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .images-top{
+      width: 90px;
+      padding-bottom: 20px;
+    }
+
+    .images-bottom{
+      padding-bottom: 20px;
+    }
+  }
+
+  .right-side{
+    .title{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.214;
+    margin-bottom: 10px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    color: $accent;
+    }
+
+    .text-top{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .text-bottom{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.666;
+
+      text-align: center;
+      color:$secondary-text-color ;
+    }
+
+    .accent{
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width:728px){
+  .section-slider{
+    .title{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 130%;
+      /* or 26px */
+      
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+    }
+  }
+
+  .main-slider{
+    position: relative;
+
+
+    .title{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.304;
+      /* or 34px */
+      
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+  .slider {
+    // position: relative;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 130px;
+    
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .slider__wrapper {
+    // position: relative;
+    overflow: hidden;
+    width: 713px;
+    height: 397px;
+    box-shadow: -5px -70px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  /* стили для контейнера слайдов */
+  .slider__items {
+    display: flex;
+    transition: transform 0.9s ease;
+  }
+
+  /* стили для слайдов */
+  .slider__item {
+    // position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px ;
+    flex: 0 0 100%;
+    min-width: 280px;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+    .left-side{
+      // width: 2360px;
+    }
+
+    .right-side{
+      width: 412px;
+    }
+
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .slider__control {
+    position: absolute;
+    bottom: 210px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+   
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+  }
+
+  .slider__control_show {
+    display: flex;
+    z-index: 30;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+  }
+
+  .slider__control_prev {
+    
+    left: -2px;
+  }
+
+  .slider__control_next {
+    right: -2px;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_prev::before {
+    background-image: url(./../images/slider/Arrow-left.svg);
+  }
+
+  .slider__control_next::before {
+    background-image: url(./../images/slider/Arrow-right.svg);
+  }
+
+  /* стили для индикаторов */
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: red;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    &:nth-child(1){
+      background-image: url(./../images/slider/1.jpg);
+    }
+    &:nth-child(2){
+      background-image: url(./../images/slider/2.jpg);
+    }
+    &:nth-child(3){
+      background-image: url(./../images/slider/3.jpg);
+    }
+    &:nth-child(4){
+      background-image: url(./../images/slider/4.jpg);
+    }
+    &:nth-child(5){
+      background-image: url(./../images/slider/5.jpg);
+    }
+    &:nth-child(6){
+      background-image: url(./../images/slider/6.jpg);
+    }
+    &:nth-child(7){
+      background-image: url(./../images/slider/7.jpg);
+    }
+    
+
+  }
+
+  .slider__indicators li.active {
+    border: 1px solid $accent;
+  }
+
+  /* для стилизации текущего слайдера */
+  .img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .left-side{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .images-top{
+      width: 150px;
+      padding-bottom: 20px;
+    }
+
+    .images-bottom{
+      padding-bottom: 20px;
+    }
+  }
+
+  .right-side{
+    .title{
+      text-align: start;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    color: $accent;
+    }
+
+    .text-top{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: start;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .text-bottom{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.666;
+
+      text-align: start;
+      color:$secondary-text-color ;
+
+      
+    }
+
+    .accent{
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width:1354px){
+  .section-slider{
+    .title{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 1.304;
+      /* or 26px */
+      
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
+  }
+
+  .main-slider{
+    position: relative;
+
+
+    .title{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.304;
+      /* or 34px */
+      
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+  .slider {
+    // position: relative;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 130px;
+    
+  }
+
+  /* стили для обёртки, в которой заключены слайды */
+  .slider__wrapper {
+    // position: relative;
+    overflow: hidden;
+    width: 1090px;
+    height: 464px;
+    box-shadow: -5px -70px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  /* стили для контейнера слайдов */
+  .slider__items {
+    display: flex;
+    transition: transform 0.9s ease;
+  }
+
+  /* стили для слайдов */
+  .slider__item {
+    // position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 40px ;
+    flex: 0 0 100%;
+    min-width: 280px;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+    .left-side{
+      // width: 2360px;
+    }
+
+    .right-side{
+      width: 706px;
+    }
+
+  }
+
+  /* стили для кнопок "вперед" и "назад" */
+  .slider__control {
+    position: absolute;
+    bottom: 260px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+   
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+  }
+
+  .slider__control_show {
+    display: flex;
+    z-index: 30;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+  }
+
+  .slider__control_prev {
+    
+    left: 20px;
+  }
+
+  .slider__control_next {
+    right: 20px;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_prev::before {
+    background-image: url(./../images/slider/Arrow-left.svg);
+  }
+
+  .slider__control_next::before {
+    background-image: url(./../images/slider/Arrow-right.svg);
+  }
+
+  /* стили для индикаторов */
+  .slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: red;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    &:nth-child(1){
+      background-image: url(./../images/slider/1.jpg);
+    }
+    &:nth-child(2){
+      background-image: url(./../images/slider/2.jpg);
+    }
+    &:nth-child(3){
+      background-image: url(./../images/slider/3.jpg);
+    }
+    &:nth-child(4){
+      background-image: url(./../images/slider/4.jpg);
+    }
+    &:nth-child(5){
+      background-image: url(./../images/slider/5.jpg);
+    }
+    &:nth-child(6){
+      background-image: url(./../images/slider/6.jpg);
+    }
+    &:nth-child(7){
+      background-image: url(./../images/slider/7.jpg);
+    }
+    
+
+  }
+
+  .slider__indicators li.active {
+    border: 1px solid $accent;
+  }
+
+  /* для стилизации текущего слайдера */
+  .img-fluid {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .left-side{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .images-top{
+      width: 150px;
+      padding-bottom: 20px;
+    }
+
+    .images-bottom{
+      padding-bottom: 20px;
+    }
+  }
+
+  .right-side{
+    .title{
+    text-align: start;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.233;
+    margin-bottom: 10px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    color: $accent;
+    }
+
+    .text-top{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.214;
+      text-align: start;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .text-bottom{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.555;
+
+      text-align: start;
+      color:$secondary-text-color ;
+
+      
+    }
+
+    .accent{
+      text-decoration: underline;
+    }
+  }
+}
+
