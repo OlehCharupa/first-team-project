@@ -1,5 +1,5 @@
 .guarantees {
-  padding: 50px 0;
+  padding-top: 50px;
   &-title {
     font-weight: 800;
     font-size: 26px;
@@ -10,17 +10,125 @@
 
     margin-bottom: 30px;
   }
-  &-wrapper {
-    padding: 30px 20px;
-    background-color: $secondary-bg-color;
+}
+
+.guarantees-list {
+  letter-spacing: 0;
+  position: relative;
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 1px;
+    left: 10px;
+    top: 50px;
+    height: 70%;
+    width: 1px;
+    border-left: 1px dashed #b9b9b9;
   }
 }
 .guarantees-item {
+  position: relative;
   color: $text-dark-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -26px;
+    width: 15px;
+    height: 20px;
+    background-image: url(./../images/campfire-2.svg);
+    background-size: contain;
+  }
 }
-.guarantees-item:not(:last-child) {
-  margin-bottom: 23px;
+
+@media screen and (max-width: 727px) {
+  .guarantees {
+    position: relative;
+    & .container::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 83%;
+      background-color: $secondary-bg-color;
+      z-index: -10;
+    }
+    &-list {
+      padding-top: 30px;
+      padding-bottom: 31px;
+      padding-left: 30px;
+    }
+    .guarantees-item:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
 }
-.guarantees-list {
-  list-style-image: url(./../images/campfire-2.svg);
+
+@media screen and (min-width: 728px) {
+  .guarantees-list {
+    background-color: $secondary-bg-color;
+    padding-top: 30px;
+    padding-left: 79px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+  }
+
+  .guarantees-list {
+    position: relative;
+    &::before {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      width: 1px;
+      left: 59px;
+      top: 38px;
+      height: 70%;
+      width: 1px;
+      border-left: 1px dashed #b9b9b9;
+    }
+  }
+  .guarantees-item::before {
+    z-index: 10;
+  }
+  .guarantees-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .guarantees {
+    &-title {
+      font-size: 46px;
+      line-height: 1.3;
+    }
+
+    &-list {
+      position: relative;
+
+      padding-top: 50px;
+      padding-right: 112px;
+      padding-top: 45px;
+      padding-left: 112px;
+    }
+    &-item {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+  .guarantees-list::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    width: 1px;
+    left: 92px;
+    top: 48px;
+    height: 69%;
+    width: 1px;
+    border-left: 1px dashed #b9b9b9;
+  }
 }
