@@ -86,7 +86,15 @@
 
       .nav-button {
         width: 260px;
-        padding: 14px 0;
+        padding: 14px 12px;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $accent;
+
         border: 2px solid #ff6b09;
       }
     }
@@ -113,9 +121,16 @@
 
     .header-button {
       width: 260px;
-      padding: 14px 0;
-      border: 2px solid #ff6b09;
       margin-right: 20px;
+      padding: 14px 12px;
+
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $accent;
+      border: 2px solid #ff6b09;
     }
   }
 
@@ -178,11 +193,10 @@
     justify-content: space-between;
     height: 90px;
 
-    .logo{
+    .logo {
       width: 128px;
       height: 45px;
     }
-
   }
   .main-nav {
     .list {
@@ -212,18 +226,19 @@
     }
   }
   .header-button {
-    width: 366px;
-    padding: 26px 0;
+    width: 336px;
+    padding: 24px 21px;
 
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     /* identical to box height */
 
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    color: $accent;
     border: 2px solid #ff6b09;
   }
 
