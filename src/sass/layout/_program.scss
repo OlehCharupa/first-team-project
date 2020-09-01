@@ -195,10 +195,10 @@
     padding-bottom: 60px;
     &::after {
       content: '';
-      background-size: 672px 500px;
+      background-size: 540px auto;
       background-image: url(./../images/about-us/lesson-desctop.png);
       background-repeat: no-repeat;
-      background-position-y: 85%;
+      background-position-y: 75%;
       background-position-x: 0%;
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
