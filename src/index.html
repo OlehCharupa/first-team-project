@@ -428,7 +428,7 @@
               Art of Teaching (GEMS education), Powerful Tools for Teaching and
               Learning (University of Houston).
             </p>
-            <a class="link" href="#"
+            <a class="link" href="https://www.cambridgeenglish.org/"
               >Cambrige English Entry Level Certificate</a
             >
           </div>
@@ -724,6 +724,7 @@
                 type="text"
                 name="name"
                 placeholder="Имя*"
+                pattern="[A-Za-zА-Яа-яЁё]{2,}"
               />
             </label>
             <label class="lable-register">
@@ -732,6 +733,7 @@
                 type="tel"
                 name="tel"
                 placeholder="Телефон*"
+                pattern="[0-9]{9,12}"
               />
             </label>
             <button class="button" type="submit">
@@ -756,7 +758,7 @@
               </svg>
               +38 (000) 000 00 00</a
             >
-            <a href="#" class="icon-instagram">
+            <a href="https://www.instagram.com" class="icon-instagram">
               <img src="./images/instagram.svg" alt="Иконка Инстаграм" />
             </a>
           </div>
@@ -786,6 +788,7 @@
               required
               placeholder="Имя"
               id="name"
+              pattern="[A-Za-zА-Яа-яЁё]{2,}"
             />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-name"></use>
@@ -801,6 +804,7 @@
               required
               placeholder="Телефон"
               id="telephone"
+              pattern="[0-9]{9,12}"
             />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-phone"></use>
@@ -831,27 +835,15 @@
             ></textarea>
           </div>
           <div class="form-wrapper-checkbox">
-            <!-- <input
+            <input
               type="checkbox"
               id="policy"
               name="user-policy"
               value="accept-policy"
               class="checkbox-input"
-            /> -->
+            />
 
             <label class="form-label-checkbox" for="policy">
-              <input
-                type="checkbox"
-                id="policy"
-                name="user-policy"
-                value="accept-policy"
-                class="checkbox-input"
-              />
-              <span class="checkbox-icon">
-                <svg class="icon-check" width="11" height="8">
-                  <use href="./images/icon-check.svg"></use>
-                </svg>
-              </span>
               Соглашаюсь с рассылкой и принимаю
               <a class="checkbox-link" target="_blank" href="">
                 Условия договора</a
