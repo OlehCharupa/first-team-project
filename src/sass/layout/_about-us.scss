@@ -22,7 +22,7 @@
       padding: 30px 10px 25px 10px;
       text-align: center;
       width: 280px;
-      box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+      box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
       // background-color: $white;
 
@@ -120,7 +120,7 @@
       text-align: center;
       width: calc((100% - 20px) / 2);
       min-height: 334px;
-      box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+      box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       // background-color: $white;
@@ -219,7 +219,7 @@
       text-align: center;
       width: calc((100% - 20px * 2) / 3);
       min-height: 396px;
-      box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+      box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       // background-color: $white;

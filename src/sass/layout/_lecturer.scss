@@ -1,48 +1,46 @@
-@media screen and (max-width: 727px){
-
-  .lecturer{
-    .title{
+@media screen and (max-width: 727px) {
+  .lecturer {
+    .title {
       margin-bottom: 20px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
-      line-height: 1,3;
+      line-height: 1.3;
       /* or 26px */
-  
+
       letter-spacing: 0.03em;
     }
-  
-    .lecturer-img{
+
+    .lecturer-img {
       width: 243px;
       margin-bottom: 20px;
-  
     }
-  
-    .form{
+
+    .form {
     }
-  
-    .name{
-      padding-bottom:11px;
-  
+
+    .name {
+      padding-bottom: 11px;
+
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 0.08em;
-  
+
       border-bottom: 1px solid $primary-text-color;
       color: #111518;
     }
-    
-    .list{
+
+    .list {
       position: relative;
       display: block;
       padding-left: 26px;
       list-style-image: url(../images/check-mark.svg);
 
-      &:after{
+      &:after {
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -54,10 +52,9 @@
         left: 0;
         background-color: $accent;
       }
-      
     }
-    
-    .item{
+
+    .item {
       margin-bottom: 24px;
       font-family: Montserrat;
       font-style: normal;
@@ -66,17 +63,17 @@
       line-height: 1.214;
       letter-spacing: 0.06em;
       color: black;
-      
-      &:first-child{
+
+      &:first-child {
         padding-top: 22px;
       }
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 43px;
       }
     }
-  
-    .text{
+
+    .text {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
@@ -85,78 +82,76 @@
       /* or 167% */
       margin-bottom: 24px;
     }
-  
-    .text-last{
+
+    .text-last {
       margin-bottom: 10px;
     }
-  
-    .link{
+
+    .link {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
       font-size: 11px;
       line-height: 1.818;
-  
+
       text-decoration: underline;
       color: $accent;
     }
   }
 }
 
-@media screen and (min-width:728px){
-  .lecturer{
+@media screen and (min-width: 728px) {
+  .lecturer {
     padding-bottom: 50px;
 
-    .lecturer-flex{
+    .lecturer-flex {
       display: flex;
       justify-content: space-between;
-
     }
 
-    .title{
+    .title {
       margin-bottom: 20px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 26px;
-      line-height: 1,3;
+      line-height: 1.3;
       /* or 26px */
-  
+
       letter-spacing: 0.03em;
     }
-  
-    .lecturer-img{
+
+    .lecturer-img {
       margin-bottom: 20px;
       width: 243px;
       height: 100%;
-  
     }
-  
-    .form{
+
+    .form {
       width: 402px;
     }
-  
-    .name{
-      padding-bottom:11px;
-  
+
+    .name {
+      padding-bottom: 11px;
+
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 0.08em;
-  
+
       border-bottom: 1px solid $primary-text-color;
       color: #111518;
     }
-    
-    .list{
+
+    .list {
       position: relative;
       display: block;
       padding-left: 26px;
       list-style-image: url(../images/check-mark.svg);
 
-      &:after{
+      &:after {
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -168,10 +163,9 @@
         left: 0;
         background-color: $accent;
       }
-      
     }
-    
-    .item{
+
+    .item {
       margin-bottom: 24px;
       font-family: Montserrat;
       font-style: normal;
@@ -180,17 +174,17 @@
       line-height: 1.214;
       letter-spacing: 0.06em;
       color: black;
-      
-      &:first-child{
+
+      &:first-child {
         padding-top: 22px;
       }
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 38px;
       }
     }
-  
-    .text{
+
+    .text {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
@@ -199,80 +193,77 @@
       /* or 167% */
       margin-bottom: 24px;
     }
-  
-    .text-last{
+
+    .text-last {
       margin-bottom: 10px;
     }
-  
-    .link{
+
+    .link {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
       font-size: 11px;
       line-height: 1.818;
-  
+
       text-decoration: underline;
       color: $accent;
     }
   }
 }
 
-@media screen and (min-width:1354px){
-  .lecturer{
+@media screen and (min-width: 1354px) {
+  .lecturer {
     padding-bottom: 50px;
 
-    .lecturer-flex{
+    .lecturer-flex {
       display: flex;
       justify-content: start;
-
-
     }
 
-    .title{
+    .title {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 46px;
       line-height: 1.304;
       /* or 60px */
-      
+
       letter-spacing: 0.03em;
     }
-  
-    .lecturer-img{
+
+    .lecturer-img {
       margin-bottom: 20px;
       width: 530px;
-  
     }
-  
-    .form{
+
+    .form {
       width: 642px;
       margin-left: 30px;
     }
-  
-    .name{
-      padding-bottom:11px;
-  
+
+    .name {
+      padding-bottom: 11px;
+
       font-family: Montserrat;
       font-style: normal;
       font-weight: 800;
       font-size: 30px;
       line-height: 1.233;
       /* identical to box height */
-      
+
       letter-spacing: 0.08em;
-  
+
       border-bottom: 1px solid $primary-text-color;
       color: #111518;
     }
-    
-    .list{
+
+    .list {
       position: relative;
       display: block;
       padding-left: 35px;
       list-style-image: url(../images/check-mark.svg);
 
-      &:after{
+      &:after {
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -284,10 +275,9 @@
         left: 0;
         background-color: $accent;
       }
-      
     }
-    
-    .item{
+
+    .item {
       padding-left: 25px;
       font-family: Montserrat;
       font-style: normal;
@@ -296,25 +286,25 @@
       line-height: 1.25;
       letter-spacing: 0.06em;
       color: black;
-      
-      &:first-child{
+
+      &:first-child {
         padding-top: 22px;
       }
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 38px;
       }
     }
-  
-    .text{
+
+    .text {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 1.555;
     }
-  
-    .text-last{
+
+    .text-last {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
@@ -322,14 +312,14 @@
       line-height: 1.555;
       margin-bottom: 10px;
     }
-  
-    .link{
+
+    .link {
       font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
       font-size: 11px;
       line-height: 1.818;
-  
+
       text-decoration: underline;
       color: $accent;
     }
