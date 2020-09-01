@@ -35,6 +35,8 @@
     }
   }
 
+
+
   .menu-wrapper {
     display: none;
     position: absolute;
@@ -51,8 +53,8 @@
       display: block;
     }
 
-
     .main-nav {
+      position: relative;
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -70,8 +72,8 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 800;
-        font-size: 20px;
-        line-height: 180%;
+        font-size: 26px;
+        line-height: 1.8;
         color: $white;
         /* or 36px */
 
@@ -199,8 +201,9 @@
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 1.214;
       color: $primary-text-color;
+      text-transform: uppercase;
       transform: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
@@ -210,8 +213,19 @@
     }
   }
   .header-button{
-    width: 260px;
-    padding: 14px 0;
+    width: 366px;
+    padding: 26px 0;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     border: 2px solid #FF6B09;
   }
     
