@@ -1,6 +1,6 @@
-.container-program {
-  margin-bottom: 50px;
-}
+// .container-program {
+//   // margin-bottom: 50px;
+// }
 .program {
   position: relative;
   &::after {
@@ -47,14 +47,23 @@
   margin-bottom: 8px;
 }
 @media screen and (max-width: 727px) {
+  .container-program {
+    padding-bottom: 50px;
+  }
   .program {
     position: relative;
     &::after {
       content: '';
-      background-image: url(./../images/lesson-mobile.png);
+      background-size: 120px 137px;
+      background-image: url(./../images/about-us/lesson-mobile.png);
       background-repeat: no-repeat;
       background-position-y: 76%;
       background-position-x: 100%;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(./../images/about-us/lesson-mobile@2x.png);
+      }
     }
     .program-list::before {
       content: '';
@@ -100,6 +109,20 @@
   .program {
     padding-top: 60px;
     padding-bottom: 50px;
+    &::after {
+      content: '';
+      background-size: 383px 280px;
+      background-image: url(./../images/about-us/lesson-tablet.png);
+      background-repeat: no-repeat;
+      background-position-y: 70%;
+      background-position-x: 100%;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(./../images/about-us/lesson-tablet@2x.png);
+      }
+    }
+
     &-title {
       text-align: start;
       font-size: 26px;
@@ -109,7 +132,7 @@
     &-list {
       position: relative;
       padding-left: 56px;
-      margin-left: 63px;
+      margin-left: 57px;
     }
     .program-list::before {
       content: '';
@@ -117,7 +140,7 @@
       top: 8px;
       left: 0px;
       width: 1px;
-      height: 88%;
+      height: 87%;
       background-color: $white;
     }
     .program-feature {
@@ -145,11 +168,13 @@
     display: flex;
   }
   .program-descriprion-item {
-    width: 33%;
+    width: calc((100% - 100px) / 3);
+    letter-spacing: 0;
   }
 
   .program-descriprion-list > .program-descriprion-item:not(:last-child) {
     margin-bottom: 0px;
+    margin-right: 50px;
   }
   .program-descriprion-list .program-accent {
     margin-bottom: 10px;
@@ -168,6 +193,19 @@
     position: relative;
     padding-top: 120px;
     padding-bottom: 60px;
+    &::after {
+      content: '';
+      background-size: 672px 500px;
+      background-image: url(./../images/about-us/lesson-desctop.png);
+      background-repeat: no-repeat;
+      background-position-y: 85%;
+      background-position-x: 0%;
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(./../images/about-us/lesoon-desktop@2x.png);
+      }
+    }
     &::before {
       content: '';
       position: absolute;
@@ -188,7 +226,10 @@
   }
   .program-feature {
     position: relative;
-    width: 20%;
+    width: calc((100% - 30px * 4) / 5);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
     .program-subtitle {
       font-weight: bold;
       font-size: 30px;
@@ -207,6 +248,7 @@
       height: 16px;
       border-radius: 50%;
     }
+
     .program-descriprion-item:not(:last-child) {
       margin-bottom: 25px;
     }
@@ -216,9 +258,9 @@
       margin-bottom: 10px;
     }
     .program-text {
-      max-width: 180px;
       font-size: 18px;
       line-height: 1.56;
+      letter-spacing: 0em;
     }
   }
 }
