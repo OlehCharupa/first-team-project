@@ -16,7 +16,7 @@
           <img class="logo" src="./images/logo/logo.svg" alt="логотип школы" />
         </a>
 
-        <div class="menu-wrapper " data-menu>
+        <div class="menu-wrapper" data-menu>
           <nav class="main-nav">
             <a href="">
               <img
@@ -428,7 +428,10 @@
               Art of Teaching (GEMS education), Powerful Tools for Teaching and
               Learning (University of Houston).
             </p>
-            <a class="link" href="#"
+            <a
+              class="link"
+              href="https://www.cambridgeenglish.org/"
+              target="_blank"
               >Cambrige English Entry Level Certificate</a
             >
           </div>
@@ -724,6 +727,7 @@
                 type="text"
                 name="name"
                 placeholder="Имя*"
+                pattern="[A-Za-zА-Яа-яЁё]{2,}"
               />
             </label>
             <label class="lable-register">
@@ -732,6 +736,7 @@
                 type="tel"
                 name="tel"
                 placeholder="Телефон*"
+                pattern="[0-9]{9,12}"
               />
             </label>
             <button class="button" type="submit">
@@ -747,16 +752,24 @@
       <div class="container">
         <div class="upper-section">
           <a href="">
-            <img class="logo" src="./images/logo/logo.svg" alt="" />
+            <img
+              class="logo"
+              src="./images/logo/logo.svg"
+              alt="логотип школы"
+            />
           </a>
           <div class="contact-info">
-            <a class="telephone" href="tel:38(000)0000000">
+            <a class="telephone" href="tel:380000000000" id="contact">
               <svg class="icon-telephone">
                 <use href="./images/sprite.svg#telephone"></use>
               </svg>
-               <span class="footer-number">+38 (000) 000 00 00</span>
+              <span class="footer-number">+38 (000) 000 00 00</span>
             </a>
-            <a href="#" class="icon-instagram" id="contact">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="icon-instagram"
+            >
               <img src="./images/instagram.svg" alt="Иконка Инстаграм" />
             </a>
           </div>
@@ -786,6 +799,7 @@
               required
               placeholder="Имя"
               id="name"
+              pattern="[A-Za-zА-Яа-яЁё]{2,}"
             />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-name"></use>
@@ -801,6 +815,7 @@
               required
               placeholder="Телефон"
               id="telephone"
+              pattern="[0-9]{9,12}"
             />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/sprite.svg#icon-phone"></use>
@@ -842,7 +857,7 @@
             <label class="form-label-checkbox" for="policy">
               Соглашаюсь с рассылкой и принимаю
               <a class="checkbox-link" target="_blank" href="">
-                &#160;Условия договора</a
+                Условия договора</a
               >
             </label>
           </div>
