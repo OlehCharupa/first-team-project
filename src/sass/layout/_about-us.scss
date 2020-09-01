@@ -115,7 +115,7 @@
     .item {
       padding: 40px 22px 24px 22px;
       text-align: center;
-      width: 334px;
+      width: calc((100% - 20px) / 2);
       height: 334px;
       box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
       // background-color: $white;
@@ -212,7 +212,7 @@
     .item {
       padding: 40px 22px 24px 22px;
       text-align: center;
-      width: 425px;
+      width: calc((100% - 20px * 2) / 3);
       height: 396px;
       box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
       // background-color: $white;
