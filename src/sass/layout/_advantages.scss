@@ -61,13 +61,16 @@
   .advantages {
     padding-top: 96px;
     padding-bottom: 130px;
+
     .list {
       display: flex;
     }
+
     .item {
       position: relative;
       width: 33.333%;
       justify-content: flex-start;
+
       .subtitle {
         position: absolute;
         top: 25px;
@@ -77,14 +80,17 @@
         line-height: 1.65;
       }
     }
+
     .advantages-border {
       margin-right: 10px;
       padding: 28px 35px 28px 25px;
-      .advantges-icon {
-        width: 40px;
-        height: 48px;
-      }
     }
+
+    .advantages-icon {
+      width: 40px;
+      height: 48px;
+    }
+
     .advantages-border::before {
       display: block;
       content: '';
