@@ -831,18 +831,30 @@
             ></textarea>
           </div>
           <div class="form-wrapper-checkbox">
-            <input
+            <!-- <input
               type="checkbox"
               id="policy"
               name="user-policy"
               value="accept-policy"
               class="checkbox-input"
-            />
+            /> -->
 
             <label class="form-label-checkbox" for="policy">
+              <input
+                type="checkbox"
+                id="policy"
+                name="user-policy"
+                value="accept-policy"
+                class="checkbox-input"
+              />
+              <span class="checkbox-icon">
+                <svg class="icon-check" width="11" height="8">
+                  <use href="./images/icon-check.svg"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю
               <a class="checkbox-link" target="_blank" href="">
-                &#160;Условия договора</a
+                Условия договора</a
               >
             </label>
           </div>
