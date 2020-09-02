@@ -121,9 +121,16 @@
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $accent;
+  }
+
+  &:required:focus:valid {
+    border-color: green;
+  }
+
+  &:required:focus:invalid {
+    border-color: red;
   }
 }
 
@@ -131,9 +138,16 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover+.modal-icon,
-.form-input:focus+.modal-icon {
+.form-input:hover+.modal-icon {
   fill: $accent;
+}
+
+.form-input:required:focus:valid+.modal-icon {
+  fill: green;
+}
+
+.form-input:required:focus:invalid+.modal-icon {
+  fill: red;
 }
 
 .form-textarea {
