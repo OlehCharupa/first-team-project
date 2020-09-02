@@ -1,11 +1,26 @@
-.container-pluses .title {
-  display: block;
-  padding-bottom: 30px;
-  color: $white;
+.container-pluses {
+  .subtitle {
+    margin-top: 5px;
+  }
+  .title {
+    display: block;
+    padding-bottom: 30px;
+    color: $white;
+  }
 }
 .container-pluses .pluses-list {
+  counter-reset: number;
   background-color: $white;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  .pluses-item::before {
+    counter-increment: number;
+    content: '\2014  0'counter(number);
+    color: $accent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.649;
+  }
 }
 @media screen and (max-width: 727px) {
   .container-pluses .title {
@@ -88,6 +103,12 @@
     .subtitle {
       font-size: 20px;
       line-height: 1.4;
+      margin-top: 10px;
     }
+  }
+  .container-pluses .pluses-list .pluses-item::before {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.649;
   }
 }

@@ -5,12 +5,24 @@
   color: $white;
 }
 .container-problems .list {
+  counter-reset: number;
   padding-top: 20px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
   background: #ffffff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  .item::before {
+    counter-increment: number;
+    content: '\2014  0'counter(number);
+    color: $accent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.649;
+  }
+  .subtitle {
+    margin-top: 5px;
+  }
 }
 
 .problems {
@@ -31,10 +43,6 @@
   .container-problems .item:not(:last-child) {
     margin-bottom: 10px;
   }
-}
-.container-problems .number {
-  font-weight: 700;
-  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 728px) and (max-width: 1353px) {
@@ -105,8 +113,15 @@
   }
 }
 @media screen and (min-width: 1354px) {
-  .container-problems .item {
+  .container-problems .list .item {
     width: calc((100% - 40px * 2) / 3);
+    .subtitle {
+      margin-top: 10px;
+    }
+    &::before {
+      font-size: 20px;
+      line-height: 1.649;
+    }
   }
   .container-problems .item:not(:nth-child(3n)) {
     margin-right: 40px;
